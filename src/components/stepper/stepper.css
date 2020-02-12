@@ -1,0 +1,11 @@
+.stepper-top{
+    display:grid;
+    grid-template-columns:auto auto auto auto auto;
+   
+    margin-bottom: 20px;
+    height:50px;
+    width:85%; 
+
+}
+
+  

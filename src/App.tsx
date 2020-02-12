@@ -1,24 +1,31 @@
 import React from 'react';
 import logo from './logo.svg';
+import {Chooseimage} from './components/choose-image/chooseimage';
 import './App.css';
+import {Navigator} from './components/navigation/navigation';
+
 
 const App = () => {
   return (
+    
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <p className="header">HVC</p>
       </header>
+      <div className="body">
+      <div className="nav"><Navigator /></div>
+      {/* <div className="nav"><Navigator /></div>  */}
+      
+      <aside><div className="cost-block">
+        <p>Cost Estimates</p>
+        <div className="list-entry">
+         <p>image</p>
+         <p>rate</p>
+        </div>
+        <div className="total-cost">total-cost</div>
+        </div>
+      </aside>
+      </div>
     </div>
   );
 }
