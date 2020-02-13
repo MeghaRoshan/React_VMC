@@ -20,8 +20,10 @@ export const Stepper:React.FC<IStepperProps>=(props: IStepperProps)=>{
  const onStepClick=()=>props.onStepClick(step);
     
  return(
-
+     <div>
+    <div className="stepper-head"> {active && step.StepText}</div>
      <section className="stepper">
+         
        <div className="stepper-top">
           <button className= {'stepper-btn ${active ? "_active" : ""}'}
           onClick={onStepClick}>
@@ -29,9 +31,10 @@ export const Stepper:React.FC<IStepperProps>=(props: IStepperProps)=>{
           </button>
 
        </div>
-       <div className="stepper-down">
-           {active && children}
-       </div>
+      
      </section>
+     <div className="stepper-down">
+           {active && children}
+       </div></div>
  );
 };

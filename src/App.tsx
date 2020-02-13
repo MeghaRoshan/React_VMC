@@ -1,11 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import {Chooseimage} from './components/choose-image/chooseimage';
 import './App.css';
+import { IStep } from './components/navigation/navigation';
+import {Stepper} from './components/stepper/stepper';
+import {Iprops} from './components/choose-image/chooseimage';
 import {Navigator} from './components/navigation/navigation';
 
 
-const App = () => {
+
+const App = (
+  // props:Iprops
+) => {
   return (
     
     <div className="App">
@@ -14,12 +19,12 @@ const App = () => {
       </header>
       <div className="body">
       <div className="nav"><Navigator /></div>
-      {/* <div className="nav"><Navigator /></div>  */}
       
       <aside><div className="cost-block">
-        <p>Cost Estimates</p>
+        <h2>Cost Estimates</h2>
         <div className="list-entry">
-         <p>image</p>
+  <p>image</p>
+  {/* <div className="stepper-head"> {active && StepText}</div> */}
          <p>rate</p>
         </div>
         <div className="total-cost">total-cost</div>
