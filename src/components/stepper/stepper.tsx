@@ -3,6 +3,7 @@ import './stepper.css';
 import { IStep } from '../navigation/navigation';
 import {Card} from '../Card/Card';
 import {Input} from '../input/input';
+import {regionTypes} from '../constants/constants';
 
 
 
@@ -18,10 +19,12 @@ export const Stepper:React.FC<IStepperProps>=(props: IStepperProps)=>{
 
 
  const onStepClick=()=>props.onStepClick(step);
+ 
     
  return(
      <div>
     <div className="stepper-head"> {active && step.StepText}</div>
+   
      <section className="stepper">
          
        <div className="stepper-top">

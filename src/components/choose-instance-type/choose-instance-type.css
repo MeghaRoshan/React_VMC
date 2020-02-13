@@ -1,0 +1,15 @@
+.generalpurpose ,.cpuoptimised, .storageoptimised , .networkoptimised{
+
+    width: 180px;
+    height: 42px;
+    margin-bottom: 10px;
+    
+    }
+.memory{
+    width: 180px;
+    height: 42px;
+}
+.cpucores{
+    width: 180px;
+    height: 42px;
+}

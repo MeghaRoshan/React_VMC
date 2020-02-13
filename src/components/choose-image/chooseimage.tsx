@@ -38,13 +38,13 @@ return(
      </label>
     </div>
     
-    <div className="steps">
+    {/* <div className="steps">
          <button className="step-block1">1. Choose Image</button>
         <button className="step-block2">2. Choose Instance Type</button>
         <button className="step-block3">3. Choose Storage and Network</button>
         <button className="step-block4">4. Configure Security</button>
         <button className="step-block5">5. Review & Launch</button>
-    </div>
+    </div> */}
 
     <div className="cards">
         
